@@ -1,0 +1,25 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var scopes;
+(function (scopes) {
+    scopes["ContactAdd"] = "contact:add";
+    scopes["ContactView"] = "contact:view";
+    scopes["ContactEdit"] = "contact:edit";
+    scopes["ContactDelete"] = "contact:delete";
+    scopes["MessageRead"] = "message:read";
+    scopes["MessageSend"] = "message:send";
+    scopes["BlastSend"] = "blast:send";
+    scopes["UserAdd"] = "user:add";
+    scopes["UserEdit"] = "user:edit";
+    scopes["UserDelete"] = "user:delete";
+    scopes["UserView"] = "user:view";
+    scopes["OrganizationEdit"] = "organization:edit";
+    scopes["OrganizationDelete"] = "organization:delete";
+    scopes["OrganizationOwner"] = "organization:owner";
+    scopes["ServiceView"] = "service:view";
+    scopes["ServicechainView"] = "servicechain:view";
+    scopes["ServicechainAdd"] = "servicechain:add";
+    scopes["ServicechainDelete"] = "servicechain:delete";
+    scopes["ServicechainEdit"] = "servicechain:edit";
+    scopes["VolubleAdmin"] = "voluble:admin";
+})(scopes = exports.scopes || (exports.scopes = {}));
