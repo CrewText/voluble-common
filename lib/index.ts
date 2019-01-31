@@ -20,3 +20,17 @@ export enum scopes {
     ServicechainEdit = "servicechain:edit",
     VolubleAdmin = "voluble:admin"
 }
+
+export namespace Entities {
+    export interface Contact {
+        first_name: string,
+        surname: string,
+        email_address: string,
+        phone_number: string,
+        ServicechainId?: string,
+        OrganizationId?: string
+        id?: string,
+        createdAt?: Date,
+        updatedAt?: Date
+    }
+}
