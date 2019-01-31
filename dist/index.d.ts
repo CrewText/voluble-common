@@ -31,3 +31,54 @@ export interface Contact {
     createdAt?: Date;
     updatedAt?: Date;
 }
+export interface Message {
+    body: string;
+    ServicechainId: string;
+    contact: string;
+    is_reply_to: string | null | undefined;
+    direction: string;
+    sent_time?: Date;
+    message_state: string;
+}
+export interface Org {
+    id?: string;
+    createdAt?: Date;
+    updatedAt?: Date;
+    name: string;
+    phone_number: string;
+}
+export interface Service {
+    id?: string;
+    createdAt?: Date;
+    updatedAt?: Date;
+    name: string;
+    directory_name: string;
+}
+export interface Servicechain {
+    id?: string;
+    createdAt?: Date;
+    updatedAt?: Date;
+    name: string;
+    OrganizationId?: string;
+}
+export interface ServicesInSC {
+    id?: string;
+    createdAt?: Date;
+    updatedAt?: Date;
+    servicechainId: string;
+    serviceId: string;
+    priority: number;
+}
+export interface User {
+    id?: string;
+    createdAt?: Date;
+    updatedAt?: Date;
+    OrganizationId?: string;
+    auth0_id: string;
+}
+export interface Blast {
+    id?: string;
+    createdAt?: Date;
+    updatedAt?: Date;
+    name: string;
+}
