@@ -18,5 +18,18 @@ export declare enum scopes {
     ServicechainAdd = "servicechain:add",
     ServicechainDelete = "servicechain:delete",
     ServicechainEdit = "servicechain:edit",
-    VolubleAdmin = "voluble:admin"
+    VolubleAdmin = "voluble:admin",
+}
+export declare namespace Entities {
+    interface Contact {
+        first_name: string;
+        surname: string;
+        email_address: string;
+        phone_number: string;
+        ServicechainId?: string;
+        OrganizationId?: string;
+        id?: string;
+        createdAt?: Date;
+        updatedAt?: Date;
+    }
 }
