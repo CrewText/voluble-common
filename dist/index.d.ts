@@ -35,7 +35,7 @@ export interface Message {
     body: string;
     ServicechainId: string;
     contact: string;
-    is_reply_to: string | null | undefined;
+    is_reply_to?: string | null | undefined;
     direction: string;
     sent_time?: Date;
     message_state: string;
