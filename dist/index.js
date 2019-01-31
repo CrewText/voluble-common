@@ -23,3 +23,14 @@ var scopes;
     scopes["ServicechainEdit"] = "servicechain:edit";
     scopes["VolubleAdmin"] = "voluble:admin";
 })(scopes = exports.scopes || (exports.scopes = {}));
+var MessageStates;
+(function (MessageStates) {
+    MessageStates["MSG_PENDING"] = "MSG_PENDING";
+    MessageStates["MSG_SENDING"] = "MSG_SENDING";
+    MessageStates["MSG_DELIVERED_SERVICE"] = "MSG_DELIVERED_SERVICE";
+    MessageStates["MSG_DELIVERED_USER"] = "MSG_DELIVERED_USER";
+    MessageStates["MSG_READ"] = "MSG_READ";
+    MessageStates["MSG_REPLIED"] = "MSG_REPLIED";
+    MessageStates["MSG_FAILED"] = "MSG_FAILED";
+    MessageStates["MSG_ARRIVED"] = "MSG_ARRIVED";
+})(MessageStates = exports.MessageStates || (exports.MessageStates = {}));

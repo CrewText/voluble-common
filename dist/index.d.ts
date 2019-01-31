@@ -20,6 +20,16 @@ export declare enum scopes {
     ServicechainEdit = "servicechain:edit",
     VolubleAdmin = "voluble:admin",
 }
+export declare enum MessageStates {
+    MSG_PENDING = "MSG_PENDING",
+    MSG_SENDING = "MSG_SENDING",
+    MSG_DELIVERED_SERVICE = "MSG_DELIVERED_SERVICE",
+    MSG_DELIVERED_USER = "MSG_DELIVERED_USER",
+    MSG_READ = "MSG_READ",
+    MSG_REPLIED = "MSG_REPLIED",
+    MSG_FAILED = "MSG_FAILED",
+    MSG_ARRIVED = "MSG_ARRIVED",
+}
 export interface Contact {
     first_name: string;
     surname: string;
