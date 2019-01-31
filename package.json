@@ -1,0 +1,23 @@
+{
+  "name": "voluble-common",
+  "version": "1.0.0",
+  "description": "The common API development elements for Voluble",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/calmcl1/voluble-common.git"
+  },
+  "author": "Callum McLean <calmcl1@aol.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/calmcl1/voluble-common/issues"
+  },
+  "homepage": "https://github.com/calmcl1/voluble-common#readme",
+  "devDependencies": {
+    "typescript": "^3.2.4"
+  }
+}
