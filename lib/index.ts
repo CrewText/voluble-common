@@ -32,6 +32,11 @@ export enum MessageStates {
     MSG_ARRIVED = "MSG_ARRIVED"
 }
 
+export enum MessageDirections {
+    INBOUND = "INBOUND",
+    OUTBOUND = "OUTBOUND"
+}
+
 export interface Contact {
     first_name: string,
     surname: string,
