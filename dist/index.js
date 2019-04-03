@@ -34,3 +34,8 @@ var MessageStates;
     MessageStates["MSG_FAILED"] = "MSG_FAILED";
     MessageStates["MSG_ARRIVED"] = "MSG_ARRIVED";
 })(MessageStates = exports.MessageStates || (exports.MessageStates = {}));
+var MessageDirections;
+(function (MessageDirections) {
+    MessageDirections["INBOUND"] = "INBOUND";
+    MessageDirections["OUTBOUND"] = "OUTBOUND";
+})(MessageDirections = exports.MessageDirections || (exports.MessageDirections = {}));

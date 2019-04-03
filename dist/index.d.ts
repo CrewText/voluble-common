@@ -30,6 +30,10 @@ export declare enum MessageStates {
     MSG_FAILED = "MSG_FAILED",
     MSG_ARRIVED = "MSG_ARRIVED",
 }
+export declare enum MessageDirections {
+    INBOUND = "INBOUND",
+    OUTBOUND = "OUTBOUND",
+}
 export interface Contact {
     first_name: string;
     surname: string;
