@@ -54,9 +54,9 @@ export interface Message {
     ServicechainId: string,
     contact: string
     is_reply_to?: string | null | undefined
-    direction: string,
+    direction: MessageDirections,
     sent_time?: Date,
-    message_state: string
+    message_state: MessageStates
 }
 
 export interface Org {
@@ -89,8 +89,8 @@ export interface ServicesInSC {
     id?: string,
     createdAt?: Date,
     updatedAt?: Date,
-    servicechainId: string,
-    serviceId: string,
+    servicechain: string,
+    service: string,
     priority: number
 }
 
