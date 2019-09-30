@@ -18,7 +18,7 @@ export declare enum scopes {
     ServicechainAdd = "servicechain:add",
     ServicechainDelete = "servicechain:delete",
     ServicechainEdit = "servicechain:edit",
-    VolubleAdmin = "voluble:admin",
+    VolubleAdmin = "voluble:admin"
 }
 export declare enum MessageStates {
     MSG_PENDING = "MSG_PENDING",
@@ -28,11 +28,11 @@ export declare enum MessageStates {
     MSG_READ = "MSG_READ",
     MSG_REPLIED = "MSG_REPLIED",
     MSG_FAILED = "MSG_FAILED",
-    MSG_ARRIVED = "MSG_ARRIVED",
+    MSG_ARRIVED = "MSG_ARRIVED"
 }
 export declare enum MessageDirections {
     INBOUND = "INBOUND",
-    OUTBOUND = "OUTBOUND",
+    OUTBOUND = "OUTBOUND"
 }
 export interface Contact {
     first_name: string;
@@ -50,9 +50,9 @@ export interface Message {
     ServicechainId: string;
     contact: string;
     is_reply_to?: string | null | undefined;
-    direction: string;
+    direction: MessageDirections;
     sent_time?: Date;
-    message_state: string;
+    message_state: MessageStates;
 }
 export interface Org {
     id?: string;
@@ -79,8 +79,8 @@ export interface ServicesInSC {
     id?: string;
     createdAt?: Date;
     updatedAt?: Date;
-    servicechainId: string;
-    serviceId: string;
+    servicechain: string;
+    service: string;
     priority: number;
 }
 export interface User {
