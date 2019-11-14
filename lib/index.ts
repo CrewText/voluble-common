@@ -44,9 +44,14 @@ export interface Contact {
     phone_number: string,
     ServicechainId?: string,
     OrganizationId?: string
+    CategoryId?: string
     id?: string,
     createdAt?: Date,
     updatedAt?: Date
+}
+
+export interface Category {
+    name: string
 }
 
 export interface Message {
