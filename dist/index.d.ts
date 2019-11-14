@@ -47,9 +47,11 @@ export interface Contact {
     updatedAt?: Date;
 }
 export interface Category {
+    id?: string;
     name: string;
 }
 export interface Message {
+    id?: string;
     body: string;
     ServicechainId: string;
     contact: string;
