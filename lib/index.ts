@@ -52,7 +52,7 @@ export interface Contact {
 
 export interface Category {
     id?: string
-    OrganizationId: string
+    OrganizationId?: string
     name: string
 }
 
