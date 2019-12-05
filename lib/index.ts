@@ -38,6 +38,7 @@ export enum MessageDirections {
 }
 
 export interface Contact {
+    title: string,
     first_name: string,
     surname: string,
     email_address: string,

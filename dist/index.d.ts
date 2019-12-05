@@ -35,6 +35,7 @@ export declare enum MessageDirections {
     OUTBOUND = "OUTBOUND"
 }
 export interface Contact {
+    title: string;
     first_name: string;
     surname: string;
     email_address: string;
