@@ -109,7 +109,6 @@ export interface User {
     createdAt?: Date,
     updatedAt?: Date,
     OrganizationId?: string,
-    auth0_id: string,
 }
 
 export interface Blast {
