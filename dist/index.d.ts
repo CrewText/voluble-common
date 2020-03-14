@@ -30,11 +30,15 @@ export declare enum MessageStates {
     MSG_FAILED = "MSG_FAILED",
     MSG_ARRIVED = "MSG_ARRIVED"
 }
+export interface SequelizeModel {
+    readonly updatedAt: Date;
+    readonly createdAt: Date;
+}
 export declare enum MessageDirections {
     INBOUND = "INBOUND",
     OUTBOUND = "OUTBOUND"
 }
-export interface Contact {
+export interface Contact extends SequelizeModel {
     title: string;
     first_name: string;
     surname: string;
@@ -43,17 +47,15 @@ export interface Contact {
     ServicechainId?: string;
     OrganizationId?: string;
     CategoryId?: string;
-    id?: string;
-    createdAt?: Date;
-    updatedAt?: Date;
+    id: string;
 }
-export interface Category {
-    id?: string;
+export interface Category extends SequelizeModel {
+    id: string;
     OrganizationId?: string;
     name: string;
 }
-export interface Message {
-    id?: string;
+export interface Message extends SequelizeModel {
+    id: string;
     body: string;
     ServicechainId: string;
     contact: string;
@@ -63,44 +65,32 @@ export interface Message {
     sent_time?: Date;
     message_state: MessageStates;
 }
-export interface Org {
-    id?: string;
-    createdAt?: Date;
-    updatedAt?: Date;
+export interface Org extends SequelizeModel {
+    id: string;
     name: string;
     phone_number: string;
 }
-export interface Service {
-    id?: string;
-    createdAt?: Date;
-    updatedAt?: Date;
+export interface Service extends SequelizeModel {
+    id: string;
     name: string;
     directory_name: string;
 }
-export interface Servicechain {
-    id?: string;
-    createdAt?: Date;
-    updatedAt?: Date;
+export interface Servicechain extends SequelizeModel {
+    id: string;
     name: string;
     OrganizationId?: string;
 }
-export interface ServicesInSC {
-    id?: string;
-    createdAt?: Date;
-    updatedAt?: Date;
+export interface ServicesInSC extends SequelizeModel {
+    id: string;
     servicechain: string;
     service: string;
     priority: number;
 }
-export interface User {
-    id?: string;
-    createdAt?: Date;
-    updatedAt?: Date;
+export interface User extends SequelizeModel {
+    id: string;
     OrganizationId?: string;
 }
-export interface Blast {
-    id?: string;
-    createdAt?: Date;
-    updatedAt?: Date;
+export interface Blast extends SequelizeModel {
+    id: string;
     name: string;
 }
