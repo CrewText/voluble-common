@@ -44,20 +44,20 @@ export interface Contact extends SequelizeModel {
     surname: string;
     email_address: string;
     phone_number: string;
-    ServicechainId?: string;
-    OrganizationId?: string;
-    CategoryId?: string;
+    servicechain: string;
+    organization?: string;
+    category?: string;
     id: string;
 }
 export interface Category extends SequelizeModel {
     id: string;
-    OrganizationId?: string;
+    organization?: string;
     name: string;
 }
 export interface Message extends SequelizeModel {
     id: string;
     body: string;
-    ServicechainId: string;
+    servicechain: string;
     contact: string;
     user?: string;
     is_reply_to?: string | null | undefined;
@@ -78,7 +78,7 @@ export interface Service extends SequelizeModel {
 export interface Servicechain extends SequelizeModel {
     id: string;
     name: string;
-    OrganizationId?: string;
+    organization?: string;
 }
 export interface ServicesInSC extends SequelizeModel {
     id: string;
@@ -88,7 +88,7 @@ export interface ServicesInSC extends SequelizeModel {
 }
 export interface User extends SequelizeModel {
     id: string;
-    OrganizationId?: string;
+    organization?: string;
 }
 export interface Blast extends SequelizeModel {
     id: string;
