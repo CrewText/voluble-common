@@ -18,6 +18,7 @@ export declare enum scopes {
     ServicechainAdd = "servicechain:add",
     ServicechainDelete = "servicechain:delete",
     ServicechainEdit = "servicechain:edit",
+    CreditsUpdate = "credits:update",
     VolubleAdmin = "voluble:admin"
 }
 export declare enum MessageStates {
@@ -74,7 +75,7 @@ export interface Org extends SequelizeModel {
     id: string;
     name: string;
     phone_number: string;
-    credits: number;
+    credits?: number;
     plan: PlanTypes;
 }
 export interface Service extends SequelizeModel {

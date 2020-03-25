@@ -21,6 +21,7 @@ var scopes;
     scopes["ServicechainAdd"] = "servicechain:add";
     scopes["ServicechainDelete"] = "servicechain:delete";
     scopes["ServicechainEdit"] = "servicechain:edit";
+    scopes["CreditsUpdate"] = "credits:update";
     scopes["VolubleAdmin"] = "voluble:admin";
 })(scopes = exports.scopes || (exports.scopes = {}));
 var MessageStates;
