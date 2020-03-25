@@ -39,3 +39,8 @@ var MessageDirections;
     MessageDirections["INBOUND"] = "INBOUND";
     MessageDirections["OUTBOUND"] = "OUTBOUND";
 })(MessageDirections = exports.MessageDirections || (exports.MessageDirections = {}));
+var PlanTypes;
+(function (PlanTypes) {
+    PlanTypes["PAYG"] = "PAYG";
+    PlanTypes["PAY_IN_ADVANCE"] = "PAY_IN_ADVANCE";
+})(PlanTypes = exports.PlanTypes || (exports.PlanTypes = {}));

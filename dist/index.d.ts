@@ -38,6 +38,10 @@ export declare enum MessageDirections {
     INBOUND = "INBOUND",
     OUTBOUND = "OUTBOUND"
 }
+export declare enum PlanTypes {
+    PAYG = "PAYG",
+    PAY_IN_ADVANCE = "PAY_IN_ADVANCE"
+}
 export interface Contact extends SequelizeModel {
     title: string;
     first_name: string;
@@ -64,11 +68,14 @@ export interface Message extends SequelizeModel {
     direction: MessageDirections;
     sent_time?: Date;
     message_state: MessageStates;
+    cost: number;
 }
 export interface Org extends SequelizeModel {
     id: string;
     name: string;
     phone_number: string;
+    credits: number;
+    plan: PlanTypes;
 }
 export interface Service extends SequelizeModel {
     id: string;
