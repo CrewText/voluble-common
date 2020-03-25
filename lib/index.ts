@@ -18,6 +18,7 @@ export enum scopes {
     ServicechainAdd = "servicechain:add",
     ServicechainDelete = "servicechain:delete",
     ServicechainEdit = "servicechain:edit",
+    CreditsUpdate = "credits:update",
     VolubleAdmin = "voluble:admin"
 }
 
