@@ -82,7 +82,7 @@ export interface Org extends SequelizeModel {
     id: string,
     name: string,
     phone_number: string
-    credits: number
+    credits?: number
     plan: PlanTypes
 }
 
