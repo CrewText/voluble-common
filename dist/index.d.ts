@@ -68,6 +68,7 @@ export interface Message extends SequelizeModel {
     is_reply_to?: string | null | undefined;
     direction: MessageDirections;
     sent_time?: Date;
+    sent_service?: string;
     message_state: MessageStates;
     cost: number;
 }
