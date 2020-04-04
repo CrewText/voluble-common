@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/calmcl1/voluble-common.git"
+    "url": "git+ssh://git@github.com/crewtext/voluble-common.git"
   },
   "author": "Callum McLean <calmcl1@aol.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/calmcl1/voluble-common/issues"
+    "url": "https://github.com/crewtext/voluble-common/issues"
   },
-  "homepage": "https://github.com/calmcl1/voluble-common#readme",
+  "homepage": "https://github.com/crewtext/voluble-common#readme",
   "devDependencies": {
     "typescript": "^3.8.3"
   }
