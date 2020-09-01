@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PlanTypes = exports.MessageDirections = exports.MessageStates = exports.scopes = void 0;
 var scopes;
 (function (scopes) {
     scopes["ContactAdd"] = "contact:add";
