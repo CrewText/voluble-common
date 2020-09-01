@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PlanTypes = exports.MessageDirections = exports.MessageStates = exports.scopes = void 0;
+exports.errors = require("./errors");
 var scopes;
 (function (scopes) {
     scopes["ContactAdd"] = "contact:add";

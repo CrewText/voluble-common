@@ -1,3 +1,5 @@
+export * as errors from './errors'
+
 export enum scopes {
     ContactAdd = "contact:add",
     ContactView = "contact:view",
